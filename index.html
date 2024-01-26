@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <title>Cryptor</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/logoAlura.png" alt="Logo da Alura">
+        <p>Cryptor</p>
+    </header>
+    <main class="campo">
+        <section class="campo__layout">
+            <textarea id="txtEncriptador" name="txtEncriptador" class="campo__layout__decodificador" cols="41" rows="10" placeholder="Digite seu texto" autocomplete="off" spellcheck="false"></textarea>
+            <div>
+                <h6 class="campo__layout__aviso">Apenas letras minúsculas e sem acento</h6>
+            </div>
+            <div class="campo__layout__botoes">
+                <button id="encriptar" class="campo__layout__botoes__botaoEncriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button id="desencriptar" class="campo__layout__botoes__botaoDesencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="campo__layout__decodificado">
+            <textarea id="txtEncriptado" class="campo__layout__decodificado__texto" cols="20" rows="10" readonly placeholder="Sua mensagem codificada aparecerá aqui!" autocomplete="off" spellcheck="false"></textarea>
+            <button id="copiar" class="campo__layout__decodificado__btnCopiar" onclick="btnCopiar()">Copiar</button>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div>
+            <a href="https://instagram.com/vh.giovannetti"><img src="./assets/instagram.png" alt="Logo Instagram"></a>
+            <a href="https://github.com/xonion94"><img src="./assets/github.png" alt="Logo Github"></a>
+            <a href="https://twitter.com/VictorGiovanne4"><img src="./assets/twitter.png" alt="Logo Twitter"></a>
+        </div>
+        <p>Desenvolvido por Victor Giovannetti</p>
+    </footer>
+    <script src="app.js" defer></script>
+    </body>
+</html>
